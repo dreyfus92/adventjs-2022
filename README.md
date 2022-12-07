@@ -1,6 +1,6 @@
 # Advent JS 2022
 
-This is a repository for Advent of Code 2022 solutions in JavaScript.
+This is a repository for [Advent of Code 2022](https://adventjs.dev/) solutions in JavaScript.
 
 ## How to install Deno?
 ```sh
