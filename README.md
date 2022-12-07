@@ -1,6 +1,6 @@
 # Advent JS 2022
 
-This is a repository that holds solutions for [Advent of Code 2022](https://adventjs.dev/) with TypeScript.
+This is a repository that holds solutions for [Advent JS 2022](https://adventjs.dev/) with TypeScript.
 
 ## How to install Deno?
 ```sh
