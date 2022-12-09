@@ -9,7 +9,7 @@ This is a repository that holds solutions for [Advent JS 2022](https://adventjs.
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
-## Checking Deno is installed
+## Checking if deno is installed
 ```sh
 deno --version
 ```
