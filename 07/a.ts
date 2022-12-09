@@ -1,3 +1,5 @@
+
+
 const a1 = ['bike', 'car', 'bike', 'bike']
 const a2 = ['car', 'bike', 'doll', 'car']
 const a3 = ['bike', 'pc', 'pc']
@@ -19,4 +21,3 @@ function getGiftsToRefill(a1: string[], a2: string[], a3: string[]) {
 }
 
 getGiftsToRefill(a1, a2, a3)
-
