@@ -1,4 +1,4 @@
-const leds = [0, 1, 1, 0, 1]
+const leds = [0, 0, 1, 0, 0]
 
 function countTime(leds: number[]) {
     const arrayofZeros = leds.join('').split('1')
