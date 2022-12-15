@@ -1,4 +1,5 @@
-// Write a function that takes a path and returns the optimal path
+// Write a function that takes a pathn and returns the optimal path
+// The optimal path is the path with the lowest sum of numbers
 
 // Example:
 // Input: [[0], [3, 4], [9, 8, 1]]
