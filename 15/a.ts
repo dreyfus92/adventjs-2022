@@ -1,29 +1,28 @@
-// Write a function that takes a pathn and returns the optimal path
-// The optimal path is the path with the lowest sum of numbers
-
-// Example:
-// Input: [[0], [3, 4], [9, 8, 1]]
-// Output: [0, 3, 8]
-// Explanation: 0 + 3 + 8 = 11
 
 
+function decorateTree(base: string): string[] {
+    const cases = {
+        "PP": "P",
+        "BB": "B",
+        "RR": "R",
+        "BP": "R",
+        "PB": "R",
+        "BR": "P",
+        "RB": "P",
+        "PR": "B",
+        "RP": "B"
+    }
 
-function getOptimalPath(path: number[][]) {
-    const maxDepth = path.length - 1;
-    let min = Number.MAX_SAFE_INTEGER;
-
-    const traverseTree = (acc: number, currentHeight: number, currentIndex: number) => {
-        acc += path[currentHeight][currentIndex];
-        if (currentHeight < maxDepth) {
-            traverseTree(acc, currentHeight + 1, currentIndex);
-            traverseTree(acc, currentHeight + 1, currentIndex + 1);
-        } else {
-            min = Math.min(min, acc);
-        }
-    };
-
-    traverseTree(0, 0, 0);
-    return min;
+    base = base.split(" ")
+    let list = new Array(base.length).fill(base)
+    return list.reduce((total, x) =>
+        total.concat(
+            [new Array(total.at(-1).length - 1).fill("-").map((_, i) => {
+                return cases[total.at(-1).slice(i, i + 2).join("")]
+            }).flat()]
+        )
+        , [base]).slice(0, base.length).map(x => x.join(" ")).reverse()
 }
 
-console.log(getOptimalPath([[0], [3, 4], [9, 8, 1]]))
+
+console.log(decorateTree('B P R P'))
