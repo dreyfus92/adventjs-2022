@@ -26,9 +26,9 @@ function howManyReindeers(reindeerTypes: Reindeers[], gifts: Gifts[]) {
         .sort((a, b) => a.weightCapacity - b.weightCapacity)
 
     return gifts.map(city => {
-        let list = {}
+        const list = {}
         let check = city.weight
-        let reindeers = reindeerTypes.filter(x => x.weightCapacity < city.weight)
+        const reindeers = reindeerTypes.filter(x => x.weightCapacity < city.weight)
         while (check != 0) {
             reindeers.map(r => {
                 if (check - r.weightCapacity >= 0) {
@@ -48,3 +48,5 @@ function howManyReindeers(reindeerTypes: Reindeers[], gifts: Gifts[]) {
         })
     })
 }
+
+howManyReindeers(reindeerTypes, gifts)
