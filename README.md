@@ -16,5 +16,5 @@ deno --version
 
 ## How to run
 ```ts
-deno run --allow-read --watch ./[day]/a.ts
+deno run --allow-read --watch ./2022/[day]/a.ts
 ```
